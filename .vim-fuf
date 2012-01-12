@@ -1,0 +1,86 @@
+VERSION	300
+mrufile	data	{'word': '/Users/jheifetz/.vimrc', 'time': 1326386209}
+mrufile	data	{'word': '/Users/jheifetz/.gitconfig', 'time': 1326386174}
+mrufile	data	{'word': '/Developer/SDKs/Research In Motion/BlackBerry WebWorks SDK for TabletOS 2.2.0.5/bbwp/ext/blackberry.acc.helloworld/src/Air/HelloWorld/src/blackberry/acc/helloWorld/HelloWorld.as', 'time': 1326302538}
+mrufile	data	{'word': '/Developer/SDKs/Research In Motion/BlackBerry WebWorks SDK for TabletOS 2.2.0.5/bbwp/ext/blackberry.acc.helloworld/js/common/HelloWorld_dispatcher.js', 'time': 1326300951}
+mrufile	data	{'word': '/Developer/SDKs/Research In Motion/BlackBerry WebWorks SDK for TabletOS 2.2.0.5/bbwp/ext/blackberry.acc.helloworld/library.xml', 'time': 1326300898}
+mrufile	data	{'word': '/Developer/SDKs/Research In Motion/BlackBerry WebWorks SDK for TabletOS 2.2.0.5/bbwp/ext/blackberry.acc.helloworld/src/Air/HelloWorld/src/blackberry/helloWorld/HelloWorld.as', 'time': 1326300430}
+mrufile	data	{'word': '/Developer/SDKs/Research In Motion/BlackBerry WebWorks SDK for TabletOS 2.2.0.5/bbwp/ext/blackberry.acc.helloworld/js/common/HelloWorld_ns.js', 'time': 1326300186}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/cycloneTest/index.html', 'time': 1326292207}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/cycloneTest/config.xml', 'time': 1326291662}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/DropBox/config.xml', 'time': 1326209704}
+mrufile	data	{'word': '/Users/jheifetz/Coding/WebWorks-Community-APIs/Tablet/UploadDownload/README.md', 'time': 1326145498}
+mrufile	data	{'word': '/Users/jheifetz/Coding/WebWorks-API-Docs/build/genDoc', 'time': 1326137195}
+mrufile	data	{'word': '/Users/jheifetz/Coding/WebWorks-API-Docs/api/blackberry_app.js', 'time': 1326136655}
+mrufile	data	{'word': '/Users/jheifetz/Coding/WebWorks-API-Docs/build/BBTemplate/class.tmpl', 'time': 1326135439}
+mrufile	data	{'word': '/Users/jheifetz/Coding/WebWorks-API-Docs/build/BBTemplate/subtemplates/example.tmpl', 'time': 1326135399}
+mrufile	data	{'word': '/Users/jheifetz/Dropbox/Public/index.html', 'time': 1325883372}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/GPSAlarm/GPSAlarm/GPSAlarm-6.cod', 'time': 1325627645}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/GPSAlarm/GPSAlarm/GPSAlarm-5.cod', 'time': 1325624043}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/GPSAlarm/GPSAlarm/GPSAlarm-4.cod', 'time': 1325624037}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/GPSAlarm/GPSAlarm/GPSAlarm-3.cod', 'time': 1325624031}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/GPSAlarm/GPSAlarm/GPSAlarm-2.cod', 'time': 1325624020}
+mrufile	data	{'word': '/Users/jheifetz/Coding/widgets/GPSAlarm/GPSAlarm/GPSAlarm-1.cod', 'time': 1325624013}
+mrufile	data	{'word': '/Users/jheifetz/Dropbox/Public/Icon', 'time': 1324604982}
+mrufile	data	{'word': '/opt/local/bin/port', 'time': 1324588406}
+mrufile	data	{'word': '/private/etc/fstab', 'time': 1324473910}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callbackPB/playbook.xml', 'time': 1324406644}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callbackPB/build.xml', 'time': 1324406638}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callbackPB/buildId.txt', 'time': 1324402274}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callbackPB/project.properties', 'time': 1324402225}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callback-blackberry/template/project/project.properties', 'time': 1324402128}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callback-blackberry/javascript/playbook/playBookPluginManager.js', 'time': 1324401695}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callback-blackberry/javascript/webWorksPluginManager.js', 'time': 1324401566}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callbackPB/lib/phonegap.1.3.0/javascript/playbook/phonegap-1.3.0.js', 'time': 1324401112}
+mrufile	data	{'word': '/Users/jheifetz/Coding/callback-blackberry/build.xml', 'time': 1324398718}
+mrucmd	data	{'word': ':q', 'time': 1326386218}
+mrucmd	data	{'word': ':wq', 'time': 1326302538}
+mrucmd	data	{'word': '/', 'time': 1326301388}
+mrucmd	data	{'word': '/limitations under the License.', 'time': 1326301388}
+mrucmd	data	{'word': '/See the License for the specific language governing permissions and', 'time': 1326301388}
+mrucmd	data	{'word': '/WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.', 'time': 1326301388}
+mrucmd	data	{'word': '/distributed under the License is distributed on an "AS IS" BASIS,', 'time': 1326301388}
+mrucmd	data	{'word': '/Unless required by applicable law or agreed to in writing, software', 'time': 1326301388}
+mrucmd	data	{'word': '/http://www.apache.org/licenses/LICENSE-2.0', 'time': 1326301388}
+mrucmd	data	{'word': '/You may obtain a copy of the License at', 'time': 1326301388}
+mrucmd	data	{'word': '/you may not use this file except in compliance with the License.', 'time': 1326301388}
+mrucmd	data	{'word': '/Licensed under the Apache License, Version 2.0 (the "License");', 'time': 1326301388}
+mrucmd	data	{'word': '/Copyright 2010-2011 Research In Motion Limited.', 'time': 1326301388}
+mrucmd	data	{'word': '/*', 'time': 1326301388}
+mrucmd	data	{'word': ':(function () {		function HelloWorld(disp) {				this.constructor.prototype.sayHello = function(name) { return disp.sayHello(name); };	}		blackberry.Loader.javascriptLoaded("blackberry.acc.helloworld", HelloWorld);})();', 'time': 1326301320}
+mrucmd	data	{'word': '/:(function () {		function HelloWorld(disp) {				this.constructor.prototype.sayHello = function(name) { return disp.sayHello(name); };	}		blackberry.Loader.javascriptLoaded("blackberry.acc.helloworld", HelloWorld);})();', 'time': 1326301289}
+mrucmd	data	{'word': ':undo', 'time': 1326301221}
+mrucmd	data	{'word': ':1,$ s/{', 'time': 1326301200}
+mrucmd	data	{'word': ':redo', 'time': 1326300005}
+mrucmd	data	{'word': ':g/<', 'time': 1326135709}
+mrucmd	data	{'word': ':q!', 'time': 1325626532}
+mrucmd	data	{'word': ':quit', 'time': 1325626208}
+mrucmd	data	{'word': ':.,.+1!:q', 'time': 1325626203}
+mrucmd	data	{'word': ':.!!', 'time': 1325626196}
+mrucmd	data	{'word': ':.!:Q', 'time': 1325626188}
+mrucmd	data	{'word': ':.!:q', 'time': 1325626181}
+mrucmd	data	{'word': '/<!DOCTYPE html>', 'time': 1325626075}
+mrucmd	data	{'word': ':y', 'time': 1325625166}
+mrucmd	data	{'word': ':w', 'time': 1324612587}
+mrucmd	data	{'word': '/ vaonlyAttendee.type = blackberry.pim.Attendee.INVITED;', 'time': 1324600528}
+mrucmd	data	{'word': '/ var attendees = [];', 'time': 1324600528}
+mrucmd	data	{'word': '/ // Create Attendee', 'time': 1324600528}
+mrucmd	data	{'word': '/ newAppt.end = end;', 'time': 1324600528}
+mrucmd	data	{'word': '/ end.setHours(start.getHours() + 1);', 'time': 1324600528}
+mrucmd	data	{'word': '/ var end = new Date();', 'time': 1324600528}
+mrucmd	data	{'word': '/ newAppt.start = start;', 'time': 1324600528}
+mrucmd	data	{'word': '/ var start = new Date();', 'time': 1324600528}
+mrucmd	data	{'word': '/ // Create our hour time slot', 'time': 1324600528}
+mrucmd	data	{'word': '/ newAppt.freeBusy = blackberry.pim.Appointment.FREE;', 'time': 1324600528}
+mrucmd	data	{'word': '/ newAppt.summary = "Talk about new project";', 'time': 1324600528}
+mrucmd	data	{'word': '/ newAppt.location = "Your office";', 'time': 1324600528}
+mrucmd	data	{'word': '/ var newAppt = new blackberry.pim.Appointment();', 'time': 1324600528}
+mrucmd	data	{'word': '///Create our Event', 'time': 1324600528}
+mrucmd	data	{'word': '/ newAppt.attendees = attendees;', 'time': 1324600519}
+mrucmd	data	{'word': '/ attendees.push(onlyAttendee);', 'time': 1324600519}
+mrucmd	data	{'word': '/ onlyAttendee.type = blackberry.pim.Attendee.INVITED;', 'time': 1324600519}
+mrucmd	data	{'word': '/ var start = newm";', 'time': 1324600519}
+mrucmd	data	{'word': '/var newAppt = new blackberry.pim.Appointment();', 'time': 1324600519}
+mrucmd	data	{'word': ':]p', 'time': 1324600499}
+mrucmd	data	{'word': ':undo2', 'time': 1324401433}
+mrucmd	data	{'word': ':undo3', 'time': 1324398963}

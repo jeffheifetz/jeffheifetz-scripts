@@ -178,3 +178,6 @@ nnoremap <silent> <C-f><C-e> :FufEditInfo<CR>
 nnoremap <silent> <C-f><C-r> :FufRenewCache<CR>
 nnoremap <silent> <C-e><C-f> :NERDTreeToggle<CR>
 nnoremap <silent> <C-e><C-t> :TlistToggle<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Possible clipboardness
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
