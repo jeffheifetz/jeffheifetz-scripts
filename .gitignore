@@ -2,12 +2,17 @@
 .MacOSX/
 .Trash/
 .bash_history
+.dropbox
 .k5login
 .localized
+.vim-fuf
+.viminfo
+Applications/*
 Coding/*
 Desktop/*
 Documents/*
 Downloads/*
+Dropbox/*
 Library/*
 Movies/*
 Music/*
