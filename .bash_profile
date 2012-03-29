@@ -10,7 +10,6 @@ alias gl='git pull'
 alias gp='git push'
 alias gst='git status'
 alias gr='git reset'
-alias pushgerrit='git push gerrit:webworks/webworks HEAD:refs/for/'
 #**************************showing git branches in bash prompt***********************************
 function is_git_dirty {
 
@@ -67,20 +66,8 @@ fi
 export TERM="xterm-256color"
 
 
-##
-# Your previous /Users/nukul2/.bash_profile file was backed up as /Users/nukul2/.bash_profile.macports-saved_2011-06-04_at_21:24:00
-##
-
 # MacPorts Installer addition on 2011-06-04_at_21:24:00: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-
-##
-# Your previous /Users/nukul2/.bash_profile file was backed up as /Users/nukul2/.bash_profile.macports-saved_2011-07-21_at_11:14:49
-##
-
-# MacPorts Installer addition on 2011-07-21_at_11:14:49: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
+cd ~/Coding
