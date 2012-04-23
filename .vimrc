@@ -89,9 +89,8 @@ map <C-l> <C-W>l
 
 " Use the arrows to something usefull
 " Seems cool, but would need to get used to it :)
-"map <right> :bn<cr>
-"map <left> :bp<cr>
-
+map <S-Right> :bn<cr>
+map <S-Left> :bp<cr>
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
@@ -179,5 +178,14 @@ nnoremap <silent> <C-f><C-r> :FufRenewCache<CR>
 nnoremap <silent> <C-e><C-f> :NERDTreeToggle<CR>
 nnoremap <silent> <C-e><C-t> :TlistToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Possible clipboardness
+" => Session List (from Nukul)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
+nmap <leader>sl :SessionList<CR>
+nmap <leader>ss :SessionSave<CR>
+" }
+nmap <F8> :TagbarToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Possible Clipboardness
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set clipboard=unnamed

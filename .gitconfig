@@ -6,3 +6,7 @@
 	token = 853d2fbe1c4d484d39f463491bfe4567
 [color]
 	ui = true
+	status = auto
+	diff = auto
+	interactive = auto
+	branch = auto
