@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/nukulb/github-nukulb/scripts'
+let g:netrw_dirhist_2='/Users/nukulb/github-nukulb/BugsBounty/build'
+let g:netrw_dirhist_3='/Users/nukulb/github-nukulb/BugsBounty/build/build'
+let g:netrw_dirhist_4='/Users/nukulb/github-nukulb/BugsBounty/node_modules/connect'
+let g:netrw_dirhist_5='/Users/nukulb/github-nukulb/BugsBounty/test'
+let g:netrw_dirhist_6='/Users/nukulb/github-nukulb/BugsBounty/build'
+let g:netrw_dirhist_7='/Users/nukulb/github-nukulb/BugsBounty'
+let g:netrw_dirhist_8='/Users/nukulb/github-nukulb/BugsBounty/build'
