@@ -99,9 +99,9 @@ set guioptions-=r  "remove right-hand scroll bar
 " => Building javascript (jslint)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set makeprg=node-hint\ %\ --config\ '$HOME/.vim/plugin/jshint/.jslintrc'\ --reporter\ '$HOME/.vim/plugin/jshint/reporter.js'
-set errorformat=%f:%l:%c:%m
-
+" set makeprg=node-hint\ %\ --config\ '$HOME/.vim/plugin/jshint/.jslintrc'\ --reporter\ '$HOME/.vim/plugin/jshint/reporter.js'
+" set errorformat=%f:%l:%c:%m
+filetype plugin on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket expanding
@@ -189,3 +189,8 @@ nmap <F8> :TagbarToggle<CR>
 " => Possible Clipboardness
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard=unnamed
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Unix Files
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set ff=unix
+

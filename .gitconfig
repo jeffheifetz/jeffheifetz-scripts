@@ -10,3 +10,5 @@
 	diff = auto
 	interactive = auto
 	branch = auto
+[core]
+	autocrlf = input
