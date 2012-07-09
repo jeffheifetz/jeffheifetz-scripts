@@ -67,7 +67,9 @@ cd ~/Coding
 export RICHMOND_ROOT=$HOME/Coding/browser
 export QCONF_OVERRIDE=$RICHMOND_ROOT/qconf-override.mk
 
-source /Developer/SDKs/bbndk-2.0.0/bbndk-env.sh 
+#Set a variable for the BBNDK locations
+export BBNDK=/Applications/bbndk
+source $BBNDK/bbndk-env.sh 
 
 # WebKit Tools and Scripts
 export PATH=$PATH:$RICHMOND_ROOT/webkit/WebKitTools/Scripts:$RICHMOND_ROOT/webkit/Tools/Scripts:$RICHMOND_ROOT/platform/tools/pb
