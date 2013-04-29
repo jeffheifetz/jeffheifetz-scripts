@@ -4,9 +4,9 @@ source $VIMRUNTIME/mswin.vim
 
 behave mswin
 
-" feel free to choose :set background=light for a different style 
-set background=dark 
-colors twilight256 
+" feel free to choose :set background=light for a different style
+set background=dark
+colors twilight256
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files and backups
@@ -16,7 +16,7 @@ set nobackup
 set nowb
 set noswapfile
 
-" allow switching of buffers without saving 
+" allow switching of buffers without saving
 " with great power comes great responsibility
 set hidden
 
@@ -28,9 +28,13 @@ set nofoldenable
 
 au! BufRead,BufNewFile Jakefile     setfiletype javascript
 
+" Tabbing
 autocmd FileType * set tabstop=4|set shiftwidth=4
 autocmd FileType ruby set tabstop=2|set shiftwidth=2
 set expandtab
+" Trim Whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 
 " save with \s to make me happy
 noremap <Leader>s :update<CR>
@@ -51,7 +55,7 @@ function! CmdLine(str)
     exe "menu Foo.Bar :" . a:str
     emenu Foo.Bar
     unmenu Foo
-endfunction 
+endfunction
 
 " From an idea by Michael Naumann
 function! VisualSearch(direction) range

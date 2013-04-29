@@ -1,24 +1,21 @@
-export PATH=/usr/local/bin:$PATH
-
+export PATH=/usr/local/bin:$HOME/bin:$PATH
 #****************************************alias****************************************************
 alias chrome="open /Applications/Google\ Chrome.app/ --args -disable-web-security -allow-file-access-from-files -start-maximized"
-alias gb='git branch'
-alias gba='git branch -a'
-alias gc='git commit -v'
-alias gd='git diff'
-alias gl='git pull'
-alias gp='git push'
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cred(Author: %ae)%Creset" --abbrev-commit --date=relative'
 alias gst='git status'
-alias gr='git reset'
 alias la='ls -la'
 #**************************showing git branches in bash prompt***********************************
 function is_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+   [[ $(git status -z | grep -v '^\?') != "" ]] && echo "*"
 }
 
 function parse_git_branch {
-  if [ ${PWD##*/} != "webkit" ]; then
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(is_git_dirty)]/"
+  #Ensure this is only run in git directories
+  if [ -d ".git" ] || git rev-parse --git-dir > /dev/null 2>&1 ; then
+    #Ensure this is not run in the webkit repo (takes too long)
+    if [ ${PWD##*/} != "webkit" ]; then
+      git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(is_git_dirty)]/"
+    fi
   fi
 }
 #*************************Git Completion*********************************************************
@@ -41,19 +38,17 @@ function proml {
 
 PS1="${TITLEBAR}\
 $LIGHT_GREEN\w$YELLOW\$(parse_git_branch)\
-\n$WHITE\$ "
+\n$WHITE ⚡ "
 PS2='> '
 PS4='+ '
 }
 proml
 
-#PS1='\[\033]0;\u@\h:\w\007\]\[\033[1;32m\]\w\[\033[0;33m\]$(parse_git_branch)\n\[\033[1;37m\]$ '
 
-# Set git autocompletion and PS1 integration
+# Set git autocompletion
 if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
     . /usr/local/git/contrib/completion/git-completion.bash
 fi
-#GIT_PS1_SHOWDIRTYSTATE=true
 
 if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
@@ -63,19 +58,17 @@ export TERM="xterm-256color"
 
 cd ~/Coding
 
-#Changes necessary for building webkit
-export RICHMOND_ROOT=$HOME/Coding/browser
-export QCONF_OVERRIDE=$RICHMOND_ROOT/qconf-override.mk
+#read -p "Would you like to setup bbndk? " -n 1
+#if [[ $REPLY =~ ^[Yy]$ ]]; then
+    #Set a variable for the BBNDK locations
+    export BBNDK=~/SDKs/bbndks/BB10.0.09-2222
+    source $BBNDK/bbndk-env.sh
+#fi
 
-#Set a variable for the BBNDK locations
-export BBNDK=/Applications/bbndk
-source $BBNDK/bbndk-env.sh 
-
-# WebKit Tools and Scripts
-export PATH=$PATH:$RICHMOND_ROOT/webkit/WebKitTools/Scripts:$RICHMOND_ROOT/webkit/Tools/Scripts:$RICHMOND_ROOT/platform/tools/pb
-
-#Addition of Desktop Qt for webplatform
-export PATH=$PATH:/Users/jeff/QtSDK/Desktop/Qt/4.8.1/gcc/bin
+#read -p "Would you like to setup for webkit?" -n 1
+#if [[ $REPLY =~ ^[Yy]$ ]]; then
+    source ~/configureWebkit.sh
+#fi
 
 ##################################
 # Put MacPorts after webkit changes to account for things like ctags
@@ -87,3 +80,8 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 #################################
 #For DoctorJS/jsctags integration
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
+
+#################################
+#For ADT integration
+export ADT=~/Coding/adt-bundle-mac-x86_64-20130219/sdk/
+export PATH=${PATH}:$ADT/platform-tools:$ADT/tools

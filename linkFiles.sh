@@ -1,8 +1,9 @@
 #!/bin/sh
-UserName=jeff
-sudo ln -s /Users/$UserName/Coding/jeffheifetz-scripts/.bash_profile /Users/$UserName/.bash_profile
-sudo ln -s /Users/$UserName/Coding/jeffheifetz-scripts/.gitconfig /Users/$UserName/.gitconfig
-sudo ln -s /Users/$UserName/Coding/jeffheifetz-scripts/.iterm /Users/$UserName/.iterm
-sudo ln -s /Users/$UserName/Coding/jeffheifetz-scripts/.ssh/config /Users/$UserName/.ssh/config
-sudo ln -s /Users/$UserName/Coding/jeffheifetz-scripts/.vim /Users/$UserName/.vim
-sudo ln -s /Users/$UserName/Coding/jeffheifetz-scripts/.vimrc /Users/$UserName/.vimrc
+Repo=$PWD
+sudo ln -s $Repo/.bash_profile $HOME/.bash_profile
+sudo ln -s $Repo/.gitconfig $HOME/.gitconfig
+sudo ln -s $Repo/.iterm $HOME/.iterm
+sudo ln -s $Repo/.ssh/config $HOME/.ssh/config
+sudo ln -s $Repo/.vim $HOME/.vim
+sudo ln -s $Repo/.vimrc $HOME/.vimrc
+sudo ln -s $Repo/configureWebkit.sh $HOME/configureWebkit.sh
