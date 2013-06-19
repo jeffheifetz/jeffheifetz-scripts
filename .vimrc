@@ -197,4 +197,7 @@ set clipboard=unnamed
 " => Unix Files
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set ff=unix
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => XML Formatting via =
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
