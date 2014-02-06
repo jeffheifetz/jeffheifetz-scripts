@@ -201,3 +201,8 @@ set ff=unix
 " => XML Formatting via =
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Pathogen =
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call pathogen#infect()
+call pathogen#helptags()
