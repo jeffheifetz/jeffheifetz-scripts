@@ -1,9 +1,4 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH
-#****************************************alias****************************************************
-alias chrome="open /Applications/Google\ Chrome.app/ --args -disable-web-security -allow-file-access-from-files -start-maximized"
-alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cred(Author: %ae)%Creset" --abbrev-commit --date=relative'
-alias gst='git status'
-alias la='ls -la'
 #**************************showing git branches in bash prompt***********************************
 function is_in_git {
     [ -d ".git" ] || git rev-parse --git-dir &> /dev/null
@@ -117,5 +112,11 @@ export PATH
 #fi
 
 
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 
 cd ~/Coding

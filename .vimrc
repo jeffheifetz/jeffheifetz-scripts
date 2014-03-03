@@ -1,3 +1,9 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Pathogen =
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call pathogen#infect()
+call pathogen#helptags()
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
@@ -6,7 +12,7 @@ behave mswin
 
 " feel free to choose :set background=light for a different style
 set background=dark
-colors twilight256
+colors distinguished
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files and backups
@@ -201,8 +207,3 @@ set ff=unix
 " => XML Formatting via =
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Pathogen =
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#infect()
-call pathogen#helptags()

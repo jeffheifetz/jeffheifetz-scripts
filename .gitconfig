@@ -24,5 +24,3 @@
 	trustExitCode = true
 [difftool "diffmerge"]
 	cmd = diffmerge $LOCAL $REMOTE
-[credential]
-	helper = osxkeychain
