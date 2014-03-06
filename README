@@ -1,1 +1,3 @@
 Running the configure script should set everything up
+
+Optionally, run "./configure update" and you can personalize your git/github settings
