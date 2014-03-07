@@ -11,16 +11,3 @@
 	branch = auto
 [core]
 	autocrlf = input
-[diff]
-	tool = diffmerge
-[difftool]
-	prompt = false
-[mergetool]
-	prompt = false
-[merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-	trustExitCode = true
-[difftool "diffmerge"]
-	cmd = diffmerge $LOCAL $REMOTE
