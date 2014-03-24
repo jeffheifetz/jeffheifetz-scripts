@@ -49,12 +49,12 @@ proml
 
 
 # Set git autocompletion
-if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-    . /usr/local/git/contrib/completion/git-completion.bash
+if [ -f /usr/local/etc/bash-completion ]; then
+    . /usr/local/etc/bash-completion
 fi
 
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
+if [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
 fi
 
 export TERM="xterm-256color"
