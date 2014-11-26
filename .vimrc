@@ -29,8 +29,13 @@ set hidden
 set number
 set title
 set wrap!
-syntax on
 set nofoldenable
+
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+
 
 au! BufRead,BufNewFile Jakefile     setfiletype javascript
 
@@ -38,12 +43,9 @@ au! BufRead,BufNewFile Jakefile     setfiletype javascript
 autocmd FileType * set tabstop=4|set shiftwidth=4
 autocmd FileType ruby set tabstop=2|set shiftwidth=2
 set expandtab
+set autoindent
 " Trim Whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-
-" save with \s to make me happy
-noremap <Leader>s :update<CR>
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -111,8 +113,11 @@ set guioptions-=r  "remove right-hand scroll bar
 
 " set makeprg=node-hint\ %\ --config\ '$HOME/.vim/plugin/jshint/.jslintrc'\ --reporter\ '$HOME/.vim/plugin/jshint/reporter.js'
 " set errorformat=%f:%l:%c:%m
-filetype plugin on
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Building ruby
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType ruby compiler ruby
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket expanding
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -139,7 +144,10 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
-
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
+"Ruby specific
+autocmd FileType ruby let g:rubycomplete_buffer_loading=1
+autocmd FileType ruby let g:rubycomplete_classes_in_global=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => RDOC preview
@@ -207,3 +215,7 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 " => Nerd Tree
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd vimenter * if !argc() | NERDTree | endif
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => MacVim Copy/Paste
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set clipboard=unnamed

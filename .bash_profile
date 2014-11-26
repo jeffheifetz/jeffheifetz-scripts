@@ -57,67 +57,43 @@ if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
 fi
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 export TERM="xterm-256color"
 
 ##################################
 # Put MacPorts after webkit changes to account for things like ctags
 #################################
 # MacPorts Installer addition on 2011-06-04_at_21:24:00: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+#export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
-
 #################################
 #For DoctorJS/jsctags integration
-export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
-
+#export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 #################################
 #For ADT integration
-export ADT=~/Coding/adt-bundle-mac-x86_64-20130219/sdk/
-export PATH=${PATH}:$ADT/platform-tools:$ADT/tools
-
+#export ADT=~/Coding/adt-bundle-mac-x86_64-20130219/sdk/
+#export PATH=${PATH}:$ADT/platform-tools:$ADT/tools
 #################################
 #For Maven
-export M2_HOME=/usr/local/maven
-export PATH=${M2_HOME}/bin:${PATH}
-export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:MaxPermSize=128m"
+#export M2_HOME=/usr/local/maven
+#export PATH=${M2_HOME}/bin:${PATH}
+#export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:MaxPermSize=128m"
 #################################
 #For Ant
-export ANT_HOME=/usr/local/ant
-export PATH=${PATH}:${ANT_HOME}/bin
-
-# New environment setting added by BB10 WebWorks SDK on Wed Sep 25 11:27:36 EDT 2013 1.
-# The unmodified version of this file is saved in /Users/jheifetz/.bash_profile1013798494.
-# Do NOT modify these lines; they are used to uninstall.
-WEBWORKS_HOME="/Users/jheifetz/SDKs/webworks/BB10 WebWorks SDK 2.0.0.17"
-export WEBWORKS_HOME
-# End comments by InstallAnywhere on Wed Sep 25 11:27:36 EDT 2013 1.
-
-# New environment setting added by BB10 WebWorks SDK on Wed Sep 25 11:27:36 EDT 2013 2.
-# The unmodified version of this file is saved in /Users/jheifetz/.bash_profile1013798494.
-# Do NOT modify these lines; they are used to uninstall.
-PATH="${PATH}:$WEBWORKS_HOME"
-export PATH
-# End comments by InstallAnywhere on Wed Sep 25 11:27:36 EDT 2013 2.
-
-#read -p "Would you like to setup bbndk? " -n 1
-#if [[ $REPLY =~ ^[Yy]$ ]]; then
-    #Set a variable for the BBNDK locations
-    #export BBNDK=~/SDKs/bbndks/BB10.0.09-2222
-    #source /Applications/Momentics.app/bbndk-env_10_2_0_1155.sh
-#fi
-
-#read -p "Would you like to setup for webkit?" -n 1
-#if [[ $REPLY =~ ^[Yy]$ ]]; then
-    #source ~/configureWebkit.sh
-#fi
+#export ANT_HOME=/usr/local/ant
+#export PATH=${PATH}:${ANT_HOME}/bin
+#################################
+#For Rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
 # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
 cd ~/Coding
+

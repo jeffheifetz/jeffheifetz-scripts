@@ -1,6 +1,6 @@
 [user]
 	name = Jeffrey Heifetz
-	email = jheifetz@blackberry.com
+	email = jeffheifetz@gmail.com
 [github]
 	user = jeffheifetz
 [color]
@@ -11,3 +11,4 @@
 	branch = auto
 [core]
 	autocrlf = input
+	excludesfile = ~/.gitignore
