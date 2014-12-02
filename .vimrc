@@ -88,11 +88,6 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map space to / (search) and c-space to ? (backgwards search)
-map <space> /
-map <c-space> ?
-map <silent> <leader><cr> :noh<cr>
-
 " Smart way to move btw. windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -219,3 +214,10 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " => MacVim Copy/Paste
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard=unnamed
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => SuperTab to Ctrl-Space
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
+let g:SuperTabMappingTabLiteral = '<Tab>'
