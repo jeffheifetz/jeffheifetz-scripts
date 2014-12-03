@@ -1,2 +1,0 @@
-supertab.vba: call delete('/Users/nukulb/.vim/doc/supertab.txt')|call delete('/Users/nukulb/.vim/plugin/supertab.vim')
-tagbar.vmb: call delete('/Users/nukulb/.vim/autoload/tagbar.vim')|call delete('/Users/nukulb/.vim/doc/tagbar.txt')|call delete('/Users/nukulb/.vim/plugin/tagbar.vim')|call delete('/Users/nukulb/.vim/syntax/tagbar.vim')

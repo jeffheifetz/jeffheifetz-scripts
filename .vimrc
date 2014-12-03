@@ -12,7 +12,7 @@ behave mswin
 
 " feel free to choose :set background=light for a different style
 set background=dark
-colors distinguished
+colors jellybeans
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files and backups
@@ -217,7 +217,7 @@ set clipboard=unnamed
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => SuperTab to Ctrl-Space
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabMappingForward = '<c-space>'
-let g:SuperTabMappingBackward = '<s-c-space>'
-let g:SuperTabMappingTabLiteral = '<Tab>'
+"let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabMappingForward = '<c-space>'
+"let g:SuperTabMappingBackward = '<s-c-space>'
+"let g:SuperTabMappingTabLiteral = '<Tab>'
