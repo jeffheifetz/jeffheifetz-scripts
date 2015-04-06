@@ -48,15 +48,7 @@ PS4='+ '
 proml
 
 
-# Set git autocompletion
-if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-    . /usr/local/git/contrib/completion/git-completion.bash
-fi
-
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
-fi
-
+# Set autocompletion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
@@ -73,22 +65,29 @@ export TERM="xterm-256color"
 #For DoctorJS/jsctags integration
 #export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 #################################
-#For ADT integration
+#For ANDROID integration
 #export ADT=~/Coding/adt-bundle-mac-x86_64-20130219/sdk/
+export ANDROID_HOME=/Users/jeffheifetz/Coding/tools/android-sdk-macosx
 #export PATH=${PATH}:$ADT/platform-tools:$ADT/tools
+export PATH=${PATH}:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+export JAVA8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/
 #################################
 #For Maven
-#export M2_HOME=/usr/local/maven
-#export PATH=${M2_HOME}/bin:${PATH}
-#export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:MaxPermSize=128m"
+export MVN_HOME=/usr/local/maven
+export PATH=${MVN_HOME}/bin:${PATH}
+export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:MaxPermSize=128m"
 #################################
 #For Ant
-#export ANT_HOME=/usr/local/ant
-#export PATH=${PATH}:${ANT_HOME}/bin
+export ANT_HOME=/usr/local/ant
+export PATH=${PATH}:${ANT_HOME}/bin
 #################################
 #For Rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
+#################################
+#For Ec2
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
+export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.5.3/libexec"
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
