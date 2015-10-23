@@ -82,12 +82,26 @@ export ANT_HOME=/usr/local/ant
 export PATH=${PATH}:${ANT_HOME}/bin
 #################################
 #For Rvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 #################################
 #For Ec2
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.5.3/libexec"
+#################################
+#For Postgres.app
+export PG_HOME="/Applications/Postgres.app/Contents/Versions/9.3/"
+export PATH=${PATH}:${PG_HOME}/bin
+#################################
+#For Libffi on OSX 10.10
+export PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/libxml2/lib/pkgconfig:$PKG_CONFIG_PATH
+#For Heroku
+export PATH="/usr/local/heroku/bin:$PATH"
+#For NVM
+export NVM_DIR="/Users/jeffheifetz/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
@@ -95,4 +109,3 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 cd ~/Coding
-

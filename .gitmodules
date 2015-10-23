@@ -79,3 +79,9 @@
 [submodule ".vim/bundle/vim-css3-syntax"]
 	path = .vim/bundle/vim-css3-syntax
 	url = git@github.com:hail2u/vim-css3-syntax.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule ".vim/bundle/rspec.vim"]
+	path = .vim/bundle/rspec.vim
+	url = git@github.com:keith/rspec.vim.git

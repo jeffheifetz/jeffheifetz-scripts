@@ -17,10 +17,13 @@ colors jellybeans
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files and backups
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git anyway...
+" Turn backup off, since most stuff is in git anyway...
 set nobackup
 set nowb
-set noswapfile
+"Set undo files to their own directory
+set undodir=~/tmp
+"Should move the swap files
+set directory=~/tmp
 
 " allow switching of buffers without saving
 " with great power comes great responsibility
@@ -120,17 +123,7 @@ vnoremap $1 <esc>`>a)<esc>`<i(<esc>
 vnoremap $2 <esc>`>a]<esc>`<i[<esc>
 vnoremap $3 <esc>`>a}<esc>`<i{<esc>
 vnoremap $$ <esc>`>a"<esc>`<i"<esc>
-vnoremap $q <esc>`>a'<esc>`<i'<esc>
 vnoremap $e <esc>`>a"<esc>`<i"<esc>
-
-" Map auto complete of (, ", ', [
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
-inoremap $q ''<esc>i
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -189,3 +182,8 @@ set clipboard=unnamed
 " => XML Auto Close Tags
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Rubocop
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_ruby_rubocop_exec = '/Users/jeffheifetz/Coding/jeffheifetz-scripts/rubocop.sh'
