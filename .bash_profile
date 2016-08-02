@@ -96,11 +96,16 @@ export PATH=${PATH}:${PG_HOME}/bin
 #################################
 #For Libffi on OSX 10.10
 export PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/libxml2/lib/pkgconfig:$PKG_CONFIG_PATH
+#################################
 #For Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
+#################################
 #For NVM
 export NVM_DIR="/Users/jeffheifetz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#################################
+#For Rust
+export PATH="/Users/jeffheifetz/.cargo/bin:$PATH"
 
 
 # Alias definitions.
