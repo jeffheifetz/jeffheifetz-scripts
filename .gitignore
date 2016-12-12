@@ -1,3 +1,4 @@
 *.un~
 .DS_Store
 .netrwhist
+Mackup/.vim/bundle

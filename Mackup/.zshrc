@@ -1,11 +1,17 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/jeffheifetz/.oh-my-zsh
+######################################
+# ANTIGEN
+#####################################
+source /users/jeffheifetz/Coding/Personal/jeffheifetz-scripts/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+antigen theme agnoster
 DEFAULT_USER=jeffheifetz
 
 # Uncomment the following line to use case-sensitive completion.
@@ -32,6 +38,8 @@ DEFAULT_USER=jeffheifetz
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
+# ad the oh-my-zsh's library.
+#
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -50,24 +58,31 @@ DEFAULT_USER=jeffheifetz
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions npm vi-mode)
+#plugins=(git zsh-autosuggestions npm vi-mode)
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Tell antigen that you're done.
+antigen apply
 
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='mvim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -87,7 +102,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
