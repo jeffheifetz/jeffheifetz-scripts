@@ -1,10 +1,53 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Pathogen =
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#infect()
-call pathogen#helptags()
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
+filetype off
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VUNDLE =
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set the runtime path to include Vundle and initialize
+ set rtp+=~/.vim/bundle/Vundle.vim
+ call vundle#begin()
+" " alternatively, pass a path where Vundle should install plugins
+" "call vundle#begin('~/some/path/here')
+"
+" " let Vundle manage Vundle, required
+ Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'https://github.com/derekwyatt/vim-scala.git'
+Plugin 'https://github.com/Lokaltog/vim-distinguished.git'
+Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'https://github.com/pangloss/vim-javascript.git'
+Plugin 'git://github.com/vim-ruby/vim-ruby.git'
+Plugin 'https://github.com/ervandew/supertab.git'
+Plugin 'https://github.com/scrooloose/nerdcommenter.git'
+Plugin 'git://github.com/tpope/vim-rails.git'
+Plugin 'git://github.com/tpope/vim-bundler.git'
+Plugin 'git://github.com/tpope/vim-fugitive.git'
+Plugin 'https://github.com/fholgado/minibufexpl.vim.git'
+Plugin 'https://github.com/bling/vim-airline.git'
+Plugin 'https://github.com/nanotech/jellybeans.vim.git'
+Plugin 'https://github.com/mklabs/grunt.vim.git'
+Plugin 'https://github.com/marijnh/tern_for_vim.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'git@github.com:ntpeters/vim-better-whitespace.git'
+Plugin 'https://github.com/trusktr/seti.vim'
+Plugin 'git@github.com:suan/vim-instant-markdown.git'
+Plugin 'git@github.com:alvan/vim-closetag.git'
+Plugin 'git@github.com:moll/vim-node.git'
+Plugin 'git@github.com:tpope/vim-haml.git'
+Plugin 'git@github.com:groenewege/vim-less.git'
+Plugin 'git@github.com:hail2u/vim-css3-syntax.git'
+Plugin 'git@github.com:scrooloose/syntastic.git'
+Plugin 'git@github.com:keith/rspec.vim.git'
+Plugin 'git@github.com:petRUShka/vim-opencl.git'
+Plugin 'git@github.com:tpope/vim-markdown.git'
+Plugin 'git@github.com:vim-scripts/DoxygenToolkit.vim.git'
+Plugin 'https://github.com/udalov/kotlin-vim'
+
+"
+" " All of your Plugins must be added before the following line
+ call vundle#end()            " required
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 

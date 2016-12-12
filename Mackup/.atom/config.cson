@@ -1,0 +1,19 @@
+"*":
+  core:
+    disabledPackages: [
+      "linter-rubocop"
+    ]
+    telemetryConsent: "limited"
+  "exception-reporting":
+    userId: "76644818-aae2-4cf1-2491-7179e20dcecd"
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "terminal-plus":
+    toggles:
+      autoClose: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
