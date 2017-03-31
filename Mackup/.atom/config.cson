@@ -3,9 +3,15 @@
     disabledPackages: [
       "linter-rubocop"
     ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
+  editor:
+    fontSize: 32
   "exception-reporting":
     userId: "76644818-aae2-4cf1-2491-7179e20dcecd"
+  "git-plus":
+    general:
+      _analyticsUserId: "de4a9603-90b5-438c-8181-6e1f81028db0"
   "linter-rubocop":
     disableWhenNoConfigFile: true
   "terminal-plus":

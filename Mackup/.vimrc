@@ -42,6 +42,7 @@ Plugin 'git@github.com:petRUShka/vim-opencl.git'
 Plugin 'git@github.com:tpope/vim-markdown.git'
 Plugin 'git@github.com:vim-scripts/DoxygenToolkit.vim.git'
 Plugin 'https://github.com/udalov/kotlin-vim'
+Plugin 'https://github.com/leafgarland/typescript-vim.git'
 
 "
 " " All of your Plugins must be added before the following line
@@ -246,3 +247,8 @@ let g:syntastic_ruby_rubocop_exec = '/Users/jeffheifetz/Coding/jeffheifetz-scrip
 " => Standard JS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_javascript_checkers = ['standard']
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Tslint
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_typescript_checkers = ['tslint']
+

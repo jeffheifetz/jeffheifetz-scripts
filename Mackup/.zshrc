@@ -81,7 +81,7 @@ antigen apply
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
  else
-   export EDITOR='mvim'
+   export EDITOR='mvim -v'
  fi
 
 # Compilation flags
@@ -103,7 +103,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export NVM_DIR=~/.nvm
-. $(brew --prefix nvm)/nvm.sh
+. "/usr/local/opt/nvm/nvm.sh"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -114,3 +114,11 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # added by travis gem
 [ -f /Users/jeffheifetz/.travis/travis.sh ] && source /Users/jeffheifetz/.travis/travis.sh
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+#################################
+#For ANDROID integration
+#################################
+export ANDROID_HOME=/Users/jeffheifetz/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+#export JAVA8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/
+#################################
