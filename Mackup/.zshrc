@@ -63,6 +63,7 @@ antigen bundle git
 antigen bundle command-not-found
 antigen bundle zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle grunt
 
 # Tell antigen that you're done.
 antigen apply
@@ -122,3 +123,13 @@ export ANDROID_HOME=/Users/jeffheifetz/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 #export JAVA8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/
 #################################
+## Run Mavencare dev environment
+###############################
+function maven()
+{
+    mkdir -p ~/mongo/db
+    mkdir -p ~/mongo/logs
+    mongod --dbpath ~/mongo/db/ --fork --logpath ~/mongo/logs/log;
+    redis-server --port 6380 --daemonize yes;
+    redis-server --port 6379 --daemonize yes;
+}

@@ -6,3 +6,7 @@ alias chrome="open /Applications/Google\ Chrome.app/ --args -disable-web-securit
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cred(Author: %ae)%Creset" --abbrev-commit --date=relative'
 alias gst='git status'
 alias vi='mvim -v'
+# Create a folder and move into it in one command
+function mkcd() { mkdir -p "$@" && cd "$_"; }
+
+

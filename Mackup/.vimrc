@@ -241,8 +241,8 @@ let g:syntastic_check_on_wq = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Rubocop
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_ruby_rubocop_exec = '/Users/jeffheifetz/Coding/jeffheifetz-scripts/rubocop.sh'
+"let g:syntastic_ruby_checkers = ['rubocop']
+"let g:syntastic_ruby_rubocop_exec = '/Users/jeffheifetz/Coding/jeffheifetz-scripts/rubocop.sh'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Standard JS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

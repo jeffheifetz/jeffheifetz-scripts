@@ -12,3 +12,5 @@
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
+[alias]
+    pr = !git log -1 --pretty=%B | awk '{ print \"\\\"\"$0\"\\\"\"}' | xargs hub pull-request -l "NEEDS_REVIEW" -m | xargs open
