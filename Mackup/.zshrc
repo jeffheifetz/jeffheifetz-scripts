@@ -1,7 +1,7 @@
 ######################################
 # ANTIGEN
 #####################################
-source /users/jeffheifetz/Coding/Personal/jeffheifetz-scripts/antigen/antigen.zsh
+source /users/jeffreyheifetz/Coding/Personal/jeffheifetz-scripts/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -12,7 +12,7 @@ antigen use oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="agnoster"
 antigen theme agnoster
-DEFAULT_USER=jeffheifetz
+DEFAULT_USER=jeffreyheifetz
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -106,15 +106,33 @@ fi
 export NVM_DIR=~/.nvm
 . "/usr/local/opt/nvm/nvm.sh"
 
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 cd ~/Coding
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# added by travis gem
-[ -f /Users/jeffheifetz/.travis/travis.sh ] && source /Users/jeffheifetz/.travis/travis.sh
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 #################################
 #For ANDROID integration

@@ -1,4 +1,12 @@
 {
     "files.trimTrailingWhitespace": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "terminal.integrated.fontFamily": "Meslo LG L for Powerline",
+    "javascript.implicitProjectConfig.checkJs": true
 }
