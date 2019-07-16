@@ -1,6 +1,6 @@
 [user]
 	name = Jeffrey Heifetz
-	email = jeffheifetz@gmail.com
+	email = jeff.heifetz@mavencare.com
 	signingkey = 4F8B0AA08AA5B906
 [github]
 	user = jeffheifetz
@@ -19,3 +19,5 @@
     show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
     cleanup = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
 
+[commit]
+	gpgsign = true

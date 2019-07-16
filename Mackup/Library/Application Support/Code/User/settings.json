@@ -4,9 +4,14 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.shellArgs.osx": [],
     "javascript.format.insertSpaceAfterConstructor": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "terminal.integrated.fontFamily": "Meslo LG L for Powerline",
-    "javascript.implicitProjectConfig.checkJs": true
+    "javascript.implicitProjectConfig.checkJs": true,
+    "explorer.confirmDelete": false,
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    }
 }
